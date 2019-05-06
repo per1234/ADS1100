@@ -1,0 +1,6 @@
+startSingleConversion	KEYWORD1
+conversionDone				KEYWORD2
+configure					KEYWORD3
+getvalue						KEYWORD4
+ADS1100						KEYWORD5
+value							KEYWORD6
