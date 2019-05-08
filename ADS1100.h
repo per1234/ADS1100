@@ -20,7 +20,7 @@
 /**************************************************************************
     CONFIGURATION REGISTER
 **************************************************************************/
-   #define ADS1100_START_SINGLE_CONVERSION				(0x80)		// In single conversion mode, writing causes a conversion to start, and writing a 0 has no effect. No effect in continous
+   #define ADS1100_START_SINGLE_CONVERSION				(0x80)		// In single conversion mode, writing causes a conversion to start, and writing a 0 has no effect. No effect in continuous
 	
 	#define ADS1100_CONVERSION_MASK							(0x10)		// single conversion mode. IF not set - continuous conversion mode
 	#define ADS1100_CONVERSION_SINGLE						(0x10)		// single conversion mode. IF not set - continuous conversion mode
@@ -59,7 +59,7 @@ class ADS1100
 				Wire.begin();
 			}
 			
-			int16_t getvalue(void)		// reading the value regardless of the fact it is avaliable
+			int16_t getvalue(void)		// reading the value regardless of the fact it is available
 			{
 				uint8_t highbyte,lowbyte;
 				Wire.requestFrom((uint8_t) ads1100_i2cAddress, (uint8_t) 2);  
